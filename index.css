@@ -411,3 +411,8 @@ color: #d5d4f5;
 .backToTopContainer:hover{
   opacity: 0.8;
 }
+@media (max-width: 575px) {
+  .u-sheet {
+    width: 280px;
+  }
+}
