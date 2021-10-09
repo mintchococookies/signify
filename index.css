@@ -352,7 +352,7 @@
   }
 }
 
-@media (max-width: 100px) {
+@media (max-width: 575px) {
   .u-section-2 .u-sheet-1 {
     min-height: 723px;
   }
