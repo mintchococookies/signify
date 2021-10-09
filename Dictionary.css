@@ -2345,7 +2345,8 @@ border-radius: 0px 1.5vmin 1.5vmin 0px;
 .speed-adjust-btn {
   margin-left: 15px;
   margin-right: 15px;
-}                        
+}  
+
 label {
   -webkit-perspective: 1000px;
   perspective: 1000px;
