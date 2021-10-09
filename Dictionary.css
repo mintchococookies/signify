@@ -2188,7 +2188,7 @@
   }
 
   .u-section-1 .u-tabs-1 {
-    width: 280px;
+    width: 340px;
     margin-top: 36px;
   }
 
@@ -2340,6 +2340,7 @@ border-radius: 0px 1.5vmin 1.5vmin 0px;
 .search-container button:active{
   border: 1px solid #333333;
 }
+
 
 /**FLASHCARDS**/
 .speed-adjust-btn {
