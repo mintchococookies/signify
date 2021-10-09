@@ -226,7 +226,7 @@
 
 @media (max-width: 575px) {
   .u-section-1 .u-group-1 {
-    width: 340px;
+    width: 280px;
   }
 
   .u-section-1 .u-text-2 {
@@ -234,7 +234,7 @@
   }
 
   .u-section-1 .u-list-1 {
-    width: 340px;
+    width: 280px;
   }
 
   .u-section-1 .u-repeater-1 {
@@ -379,6 +379,7 @@
   }
 }
 
+/* SELF ADDED IN */
 html{
   scroll-behavior: smooth;
 }
