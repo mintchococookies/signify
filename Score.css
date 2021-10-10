@@ -146,7 +146,7 @@
   }
 
   .u-section-1 .u-group-2 {
-    width: 325px;
+    width: 280px;
     min-height: 501px;
   }
 
@@ -178,15 +178,20 @@
 
   .u-section-1 .u-btn-1 {
     margin-top: 44px;
-    margin-right: 24px;
+    margin-right: 5px;
     padding-right: 11px;
     padding-left: 10px;
   }
 
   .u-section-1 .u-btn-2 {
-    margin-left: 24px;
+    margin-left: 5px;
     padding-left: 34px;
     padding-right: 34px;
     padding-bottom: 7px;
+  }
+}
+@media (max-width: 350px) {
+  .u-sheet {
+    width: 280px;
   }
 }
