@@ -412,7 +412,7 @@ color: #d5d4f5;
   opacity: 0.8;
 }
 
-@media (max-width: 320px) {
+@media (max-width: 350px) {
   .u-sheet {
     width: 280px;
   }
