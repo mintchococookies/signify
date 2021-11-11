@@ -1,5 +1,5 @@
 <p align="center"> 
-  <img src="./images/signify-logo.png" alt="Signify Logo" width="80px" height="80px">
+  <img src="./images/signify-logo-black.png" alt="Signify Logo" width="80px" height="80px">
 </p>
 <h1 align="center"> Signify MSL </h1>
 <h3 align="center"> HC1 2023 - Human Computer Interaction </h3>
@@ -40,7 +40,23 @@
 <!-- INSTALLATION -->
 <h2 id="installation"> :floppy_disk: Installation</h2>
 
-<pre><code>$ git clone url</code></pre>
+<ol>
+  <li>Clone the project</li>
+  <pre><code>$ git clone url</code></pre>
+  
+  <li>Create a new branch and switch to it to make changes</li>
+  <pre><code>$ git switch -c newBranchName</code></pre>
+  
+  <li>Add and commit it</li>
+  <pre><code>$ git add .
+$ git commit -m "message here"</code></pre>
+  
+  <li>Do a git pull and then git push</li>
+    <pre><code>$ git pull
+$ git push</code></pre>
+  
+</ol>
+
 
 ![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png)
 
@@ -60,12 +76,11 @@
 <!-- GETTING STARTED -->
 <h2 id="getting-started"> :book: Getting Started</h2>
 
-<p>You are able to start the game by typing the following commands in the command line:</p>
-<pre><code>$ python pacman.py</code></pre>
+<p>You are able to open the website using this link:
+T
+</p>
 
-<p>You can see the list of all options and their default values via:</p>
-<pre><code>$ python pacman.py -h</code></pre>
-<i>Note that all of the commands that appear in this project also appear in <code>commands.txt</code>, for easy copying and pasting.</i>
+
 
 ![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png)
 
