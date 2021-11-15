@@ -2,7 +2,7 @@
   <img src="./images/signify-logo-black.png" alt="Signify Logo" width="80px" height="80px">
 </p>
 <h1 align="center"> Signify MSL </h1>
-<h3 align="center"> HC1 2023 - Human Computer Interaction </h3>
+<h3 align="center"> CSC 3024 - Human Computer Interaction </h3>
 <h5 align="center"> Project - <a href="https://www.concordia.ca/">Sunway University</a> (August 2021) </h5>
 
 <!-- <p align="center"> 
@@ -68,7 +68,8 @@ $ git push</code></pre>
 </p>
 
 <ul>
-  <li>Quiz</li>
+  <li>MSL Dictionary</li>
+  <li>MSL Quiz</li>
 </ul>
 
 ![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png)
@@ -76,8 +77,8 @@ $ git push</code></pre>
 <!-- GETTING STARTED -->
 <h2 id="getting-started"> :book: Getting Started</h2>
 
-<p>You are able to open the website using this link:
-T
+<p>You are able to open the website using this link: https://signifymsl.github.io/signify/
+
 </p>
 
 
