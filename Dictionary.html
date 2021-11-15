@@ -27,6 +27,7 @@
     <meta property="og:type" content="website">
   <!-- ICON -->
   <script src="https://kit.fontawesome.com/13d7b5f603.js" crossorigin="anonymous"></script>
+  <script defer src="./javascript/search.js"></script>
   
   </head>
   <body class="u-body"><header class="u-clearfix u-grey-80 u-header u-header" id="sec-3004"><div class="u-clearfix u-sheet u-valign-middle u-sheet-1">
@@ -74,8 +75,8 @@
         <div class="shadow u-clearfix u-custom-html u-custom-html-1">
           <script src="https://kit.fontawesome.com/13d7b5f603.js" crossorigin="anonymous"></script>
           <div class="search-container">
-            <form action="">
-              <input type="text" id="searchbar" name="" placeholder="Search...">
+            <form action="#">
+              <input type="text" id="searchbar" name="search" onkeyup="searchWord(this)" placeholder="Search...">
               <button><i class="fa-search fas" aria-hidden="true"></i>
               </button>
               <input type="hidden" value="" name="recaptchaResponse">
@@ -86,7 +87,10 @@
         <div class="u-tab-links-align-justify u-tabs u-tabs-1">
           <ul class="u-spacing-30 u-tab-list u-unstyled" role="tablist">
             <li class="u-tab-item" role="presentation">
-              <a class="active u-active-custom-color-2 u-button-style u-custom-color-3 u-custom-font u-radius-20 u-tab-link u-text-active-white u-text-black u-tab-link-1" id="link-tab-0da5" href="#tab-0da5" role="tab" aria-controls="tab-0da5" aria-selected="true">ANIMALS</a>
+              <a class="active u-active-custom-color-2 u-button-style u-custom-color-3 u-custom-font u-radius-20 u-tab-link u-text-active-white u-text-black u-tab-link-2" id="link-tab-14b7" href="#tab-14b7" role="tab" aria-controls="tab-14b7" aria-selected="false">ALL</a>
+            </li>
+            <li class="u-tab-item" role="presentation">
+              <a class="u-active-custom-color-2 u-button-style u-custom-color-3 u-custom-font u-radius-20 u-tab-link u-text-active-white u-text-black u-tab-link-1" id="link-tab-0da5" href="#tab-0da5" role="tab" aria-controls="tab-0da5" aria-selected="true">ANIMALS</a>
             </li>
             <li class="u-tab-item" role="presentation">
               <a class="u-active-custom-color-2 u-button-style u-custom-color-3 u-custom-font u-radius-20 u-tab-link u-text-active-white u-text-black u-tab-link-2" id="link-tab-14b7" href="#tab-14b7" role="tab" aria-controls="tab-14b7" aria-selected="false">FOOD</a>
@@ -97,9 +101,10 @@
             <li class="u-tab-item u-tab-item-4" role="presentation">
               <a class="u-active-custom-color-2 u-button-style u-custom-color-3 u-custom-font u-radius-20 u-tab-link u-text-active-white u-text-black u-tab-link-4" id="tab-93fc" href="#link-tab-93fc" role="tab" aria-controls="link-tab-93fc" aria-selected="false">PEOPLE</a>
             </li>
-            <li class="u-tab-item u-tab-item-5" role="presentation">
+            <!-- <li class="u-tab-item u-tab-item-5" role="presentation">
               <a class="u-active-custom-color-2 u-button-style u-custom-color-3 u-custom-font u-radius-20 u-tab-link u-text-active-white u-text-black u-tab-link-5" id="link-tab-b8e2" href="#tab-b8e2" role="tab" aria-controls="tab-b8e2" aria-selected="false">COLORS</a>
-            </li>
+            </li> --> 
+            <!-- REMOVED THIS FOR NOWW!! -->
           </ul>
           <div class="u-tab-content">
 
@@ -107,10 +112,10 @@
             <div class="u-container-style u-custom-color-5 u-tab-active u-tab-pane u-tab-pane-1" id="tab-0da5" role="tabpanel" aria-labelledby="link-tab-0da5">
               <div class="u-container-layout u-container-layout-1">
                 <div class="u-expanded-width u-list u-list-1">
-                  <div class="u-repeater u-repeater-1">
-                  
+                  <div class="u-repeater u-repeater-1 allHolder" >
+          
     <!--CATEGORY 1, WORD 1-->
-                    <div class="u-container-style u-custom-item u-list-item u-repeater-item u-shape-rectangle">
+                    <div class="u-container-style u-custom-item u-list-item u-repeater-item u-shape-rectangle wordCards">
                       <div class="u-container-layout u-similar-container u-container-layout-2">
                         <div class="u-clearfix u-custom-html u-custom-html-2">
                           <label>
@@ -135,7 +140,7 @@
                             </div>
                           </label>
                         </div>
-                        <p class="u-custom-font u-custom-item u-text u-text-default u-text-grey-80 u-text-3">ELEPHANT</p>
+                        <p class="u-custom-font u-custom-item u-text u-text-default u-text-grey-80 u-text-3 signWord">ELEPHANT</p>
                       </div>
                     </div>
           
@@ -165,7 +170,7 @@
                             </div>
                           </label>
                         </div>
-                        <p class="u-custom-font u-custom-item u-text u-text-default u-text-grey-80 u-text-4">TIGER</p>
+                        <p class="u-custom-font u-custom-item u-text u-text-default u-text-grey-80 u-text-4 signWord">TIGER</p>
                       </div>
                     </div>
       
@@ -194,7 +199,7 @@
                             </div>
                           </label>
                         </div>
-                        <p class="u-custom-font u-custom-item u-text u-text-default u-text-grey-80 u-text-5">WOLF</p>
+                        <p class="u-custom-font u-custom-item u-text u-text-default u-text-grey-80 u-text-5 signWord">WOLF</p>
                       </div>
                     </div>
 
@@ -223,7 +228,7 @@
                             </div>
                           </label>
                         </div>
-                        <p class="u-custom-font u-custom-item u-text u-text-default u-text-grey-80 u-text-6">BEAR</p>
+                        <p class="u-custom-font u-custom-item u-text u-text-default u-text-grey-80 u-text-6 signWord">BEAR</p>
                       </div>
                     </div>
 
@@ -252,7 +257,7 @@
                             </div>
                           </label>
                         </div>
-                        <p class="u-custom-font u-custom-item u-text u-text-default u-text-grey-80 u-text-7">DEER</p>
+                        <p class="u-custom-font u-custom-item u-text u-text-default u-text-grey-80 u-text-7 signWord">DEER</p>
                       </div>
                     </div>
 
@@ -281,7 +286,7 @@
                             </div>
                           </label>
                         </div>
-                        <p class="u-custom-font u-custom-item u-text u-text-default u-text-grey-80 u-text-8">GIRAFFE</p>
+                        <p class="u-custom-font u-custom-item u-text u-text-default u-text-grey-80 u-text-8 signWord">GIRAFFE</p>
                       </div>
                     </div>
                   </div>
@@ -320,7 +325,7 @@
                             </div>
                           </label>
                         </div>
-                        <p class="u-custom-font u-custom-item u-text u-text-default u-text-grey-80 u-text-9">BANANA</p>
+                        <p class="u-custom-font u-custom-item u-text u-text-default u-text-grey-80 u-text-9 signWord">BANANA</p>
                       </div>
                     </div>
 
@@ -349,7 +354,7 @@
                             </div>
                           </label>
                         </div>
-                        <p class="u-custom-font u-custom-item u-text u-text-default u-text-grey-80 u-text-10">APPLE</p>
+                        <p class="u-custom-font u-custom-item u-text u-text-default u-text-grey-80 u-text-10 signWord">APPLE</p>
                       </div>
                     </div>
 
@@ -378,7 +383,7 @@
                             </div>
                           </label>
                         </div>
-                        <p class="u-custom-font u-custom-item u-text u-text-default u-text-grey-80 u-text-11">ORANGE</p>
+                        <p class="u-custom-font u-custom-item u-text u-text-default u-text-grey-80 u-text-11 signWord">ORANGE</p>
                       </div>
                     </div>
 
@@ -407,7 +412,7 @@
                             </div>
                           </label>
                         </div>
-                        <p class="u-custom-font u-custom-item u-text u-text-default u-text-grey-80 u-text-12">WATERMELON</p>
+                        <p class="u-custom-font u-custom-item u-text u-text-default u-text-grey-80 u-text-12 signWord">WATERMELON</p>
                       </div>
                     </div>
 
@@ -436,7 +441,7 @@
                             </div>
                           </label>
                         </div>
-                        <p class="u-custom-font u-custom-item u-text u-text-default u-text-grey-80 u-text-13">DURIAN</p>
+                        <p class="u-custom-font u-custom-item u-text u-text-default u-text-grey-80 u-text-13 signWord">DURIAN</p>
                       </div>
                     </div>
 
@@ -465,7 +470,7 @@
                             </div>
                           </label>
                         </div>
-                        <p class="u-custom-font u-custom-item u-text u-text-default u-text-grey-80 u-text-14">PAPAYA</p>
+                        <p class="u-custom-font u-custom-item u-text u-text-default u-text-grey-80 u-text-14 signWord">PAPAYA</p>
                       </div>
                     </div>
                   </div>
@@ -504,7 +509,7 @@
                             </div>
                           </label>
                         </div>
-                        <p class="u-custom-font u-custom-item u-text u-text-default u-text-grey-80 u-text-15">MORNING</p>
+                        <p class="u-custom-font u-custom-item u-text u-text-default u-text-grey-80 u-text-15 signWord">MORNING</p>
                       </div>
                     </div>
 
@@ -533,7 +538,7 @@
                             </div>
                           </label>
                         </div>
-                        <p class="u-custom-font u-custom-item u-text u-text-default u-text-grey-80 u-text-16">AFTERNOON</p>
+                        <p class="u-custom-font u-custom-item u-text u-text-default u-text-grey-80 u-text-16 signWord">AFTERNOON</p>
                       </div>
                     </div>
 
@@ -562,7 +567,7 @@
                             </div>
                           </label>
                         </div>
-                        <p class="u-custom-font u-custom-item u-text u-text-default u-text-grey-80 u-text-17">NIGHT</p>
+                        <p class="u-custom-font u-custom-item u-text u-text-default u-text-grey-80 u-text-17 signWord">NIGHT</p>
                       </div>
                     </div>
 
@@ -591,7 +596,7 @@
                             </div>
                           </label>
                         </div>
-                        <p class="u-custom-font u-custom-item u-text u-text-default u-text-grey-80 u-text-18">SUMMER</p>
+                        <p class="u-custom-font u-custom-item u-text u-text-default u-text-grey-80 u-text-18 signWord">SUMMER</p>
                       </div>
                     </div>
 
@@ -620,7 +625,7 @@
                             </div>
                           </label>
                         </div>
-                        <p class="u-custom-font u-custom-item u-text u-text-default u-text-grey-80 u-text-19">WINTER</p>
+                        <p class="u-custom-font u-custom-item u-text u-text-default u-text-grey-80 u-text-19 signWord">WINTER</p>
                       </div>
                     </div>
 
@@ -649,7 +654,7 @@
                             </div>
                           </label>
                         </div>
-                        <p class="u-custom-font u-custom-item u-text u-text-default u-text-grey-80 u-text-20">SPRING</p>
+                        <p class="u-custom-font u-custom-item u-text u-text-default u-text-grey-80 u-text-20 signWord">SPRING</p>
                       </div>
                     </div>
                   </div>
@@ -688,7 +693,7 @@
                             </div>
                           </label>
                         </div>
-                        <p class="u-custom-font u-custom-item u-text u-text-default u-text-grey-80 u-text-21">MAN</p>
+                        <p class="u-custom-font u-custom-item u-text u-text-default u-text-grey-80 u-text-21 signWord">MAN</p>
                       </div>
                     </div>
 
@@ -717,7 +722,7 @@
                             </div>
                           </label>
                         </div>
-                        <p class="u-custom-font u-custom-item u-text u-text-default u-text-grey-80 u-text-22">WOMAN</p>
+                        <p class="u-custom-font u-custom-item u-text u-text-default u-text-grey-80 u-text-22 signWord">WOMAN</p>
                       </div>
                     </div>
 
@@ -746,7 +751,7 @@
                             </div>
                           </label>
                         </div>
-                        <p class="u-custom-font u-custom-item u-text u-text-default u-text-grey-80 u-text-23">FATHER</p>
+                        <p class="u-custom-font u-custom-item u-text u-text-default u-text-grey-80 u-text-23 signWord">FATHER</p>
                       </div>
                     </div>
 
@@ -775,7 +780,7 @@
                             </div>
                           </label>
                         </div>
-                        <p class="u-custom-font u-custom-item u-text u-text-default u-text-grey-80 u-text-24">MOTHER</p>
+                        <p class="u-custom-font u-custom-item u-text u-text-default u-text-grey-80 u-text-24 signWord">MOTHER</p>
                       </div>
                     </div>
 
@@ -804,7 +809,7 @@
                             </div>
                           </label>
                         </div>
-                        <p class="u-custom-font u-custom-item u-text u-text-default u-text-grey-80 u-text-25">BROTHER</p>
+                        <p class="u-custom-font u-custom-item u-text u-text-default u-text-grey-80 u-text-25 signWord">BROTHER</p>
                       </div>
                     </div>
 
@@ -833,7 +838,7 @@
                             </div>
                           </label>
                         </div>
-                        <p class="u-custom-font u-custom-item u-text u-text-default u-text-grey-80 u-text-26">SISTER</p>
+                        <p class="u-custom-font u-custom-item u-text u-text-default u-text-grey-80 u-text-26 signWord">SISTER</p>
                       </div>
                     </div>
                   </div>
@@ -872,7 +877,7 @@
                             </div>
                           </label>
                         </div>
-                        <p class="u-custom-font u-custom-item u-text u-text-default u-text-grey-80 u-text-27">RED</p>
+                        <p class="u-custom-font u-custom-item u-text u-text-default u-text-grey-80 u-text-27 signWordRED</p>
                       </div>
                     </div>
 
@@ -901,7 +906,7 @@
                             </div>
                           </label>
                         </div>
-                        <p class="u-custom-font u-custom-item u-text u-text-default u-text-grey-80 u-text-28">GREEN</p>
+                        <p class="u-custom-font u-custom-item u-text u-text-default u-text-grey-80 u-text-28 signWord>GREEN</p>
                       </div>
                     </div>
 
@@ -930,7 +935,7 @@
                             </div>
                           </label>
                         </div>
-                        <p class="u-custom-font u-custom-item u-text u-text-default u-text-grey-80 u-text-29">BLUE</p>
+                        <p class="u-custom-font u-custom-item u-text u-text-default u-text-grey-80 u-text-29 signWord">BLUE</p>
                       </div>
                     </div>
 
@@ -959,7 +964,7 @@
                             </div>
                           </label>
                         </div>
-                        <p class="u-custom-font u-custom-item u-text u-text-default u-text-grey-80 u-text-30">BROWN</p>
+                        <p class="u-custom-font u-custom-item u-text u-text-default u-text-grey-80 u-text-30 signWord>BROWN</p>
                       </div>
                     </div>
 
@@ -988,7 +993,7 @@
                             </div>
                           </label>
                         </div>
-                        <p class="u-custom-font u-custom-item u-text u-text-default u-text-grey-80 u-text-31">PURPLE</p>
+                        <p class="u-custom-font u-custom-item u-text u-text-default u-text-grey-80 u-text-31 signWord">PURPLE</p>
                       </div>
                     </div>
                   
@@ -1017,7 +1022,7 @@
                             </div>
                           </label>
                         </div>
-                        <p class="u-custom-font u-custom-item u-text u-text-default u-text-grey-80 u-text-32">PINK</p>
+                        <p class="u-custom-font u-custom-item u-text u-text-default u-text-grey-80 u-text-32 signWord">PINK</p>
                       </div>
                     </div>
                   </div>
