@@ -73,11 +73,11 @@
             <div class="u-container-style u-group u-group-2">
               <div class="u-container-layout">
                 <img class="u-align-center u-image u-image-default u-preserve-proportions u-image-1" src="images/signify-logo-black.png" alt="" data-image-width="500" data-image-height="500">
-                <h2 class="u-align-center u-custom-font u-text u-text-default u-text-2" data-animation-name="flipIn" data-animation-duration="1000" data-animation-delay="0" data-animation-direction="X">7 / 10<br>
+                <h2 id="quiz-score" class="u-align-center u-custom-font u-text u-text-default u-text-2" data-animation-name="flipIn" data-animation-duration="1000" data-animation-delay="0" data-animation-direction="X">7 / 10<br>
                 </h2>
-                <h3 class="u-align-center u-custom-font u-text u-text-3">You recognized 7 out of 10 signs<br>
+                <h3 id="quiz-result" class="u-align-center u-custom-font u-text u-text-3">You recognized 7 out of 10 signs<br>
                 </h3>
-                <h3 class="u-align-center u-custom-font u-text u-text-default u-text-4">Well done! <br>
+                <h3 id="quiz-feedback" class="u-align-center u-custom-font u-text u-text-default u-text-4">Well done! <br>
                 </h3>
                 <a href="Menu.html" class="u-border-none u-btn u-btn-round u-button-style u-custom-color-3 u-custom-font u-radius-50 u-btn-1">Play Again<br>
                 </a>
@@ -94,5 +94,10 @@
         <p class="u-custom-font u-small-text u-text u-text-variant u-text-1" spellcheck="true">signify.msl@gmail.com&nbsp; &nbsp; 012-3456789</p>
         <p class="u-custom-font u-small-text u-text u-text-variant u-text-2" spellcheck="true">Copyright ©&nbsp;2021 Signify. All Rights Reserved.</p>
       </div></footer>
+    <script>
+      document.getElementById("quiz-score").innerHTML = sessionStorage.getItem("score") + " / 5";
+      document.getElementById("quiz-result").innerHTML = "You recognized " + sessionStorage.getItem("score") + " out of 5 signs";
+      document.getElementById("quiz-feedback").innerHTML = sessionStorage.getItem("feedback");
+    </script>
   </body>
 </html>

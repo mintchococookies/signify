@@ -70,10 +70,10 @@
           <div class="u-container-layout u-container-layout-1">
             <div class="u-container-style u-expanded-width-xs u-group u-group-2">
               <div class="u-container-layout">
-                <h2 class="u-custom-font u-text u-text-default u-text-grey-80 u-text-2">Category: Colours</h2>
-                <h6 class="u-custom-font u-text u-text-default u-text-grey-60 u-text-3">1 / 10</h6>
+                <p id="quiz-category" class="u-align-center u-custom-font u-text u-text-default u-text-grey-80 u-text-2">Category: Colours</p>
+                <h6 id="quiz-no" class="u-custom-font u-text u-text-default u-text-grey-60 u-text-3">1 / 10</h6>
                 <!--VIDEO-->
-								<video width="340" height="240" autoplay loop muted class="u-image u-image-default u-image-1" alt="" data-image-width="1280" data-image-height="1130">
+								<video width="340" height="240" autoplay loop muted id="quiz-video" class="u-image u-image-default u-image-1" alt="" data-image-width="1280" data-image-height="1130">
 									<source src="images/banana.mp4" type="video/mp4">
 									Your browser does not support the video tag.
 								</video>
@@ -99,21 +99,21 @@
               <div class="u-repeater u-repeater-1">
                 <div class="u-container-style u-custom-item u-list-item u-repeater-item">
                   <div class="u-container-layout u-similar-container u-container-layout-3">
-                    <a href="" class="u-active-custom-color-2 u-border-none u-btn u-btn-round u-button-style u-custom-color-3 u-custom-font u-custom-item u-radius-20 u-btn-5">&nbsp;yellow</a>
-                    <a href="" class="u-active-custom-color-2 u-border-none u-btn u-btn-round u-button-style u-custom-color-3 u-custom-font u-custom-item u-radius-20 u-btn-6">Blue</a>
+                    <a id="quiz-op-1" onclick="checkAnswer(this)" class="u-border-none u-btn u-btn-round u-button-style u-custom-color-3 u-custom-font u-custom-item u-radius-20 u-btn-5">Yellow</a>
+                    <a id="quiz-op-2" onclick="checkAnswer(this)" class="u-border-none u-btn u-btn-round u-button-style u-custom-color-3 u-custom-font u-custom-item u-radius-20 u-btn-6">Blue</a>
                   </div>
                 </div>
                 <div class="u-container-style u-custom-item u-list-item u-repeater-item">
                   <div class="u-container-layout u-similar-container u-container-layout-4">
-                    <a href="" class="u-active-custom-color-2 u-border-none u-btn u-btn-round u-button-style u-custom-color-3 u-custom-font u-custom-item u-radius-20 u-btn-7">orange</a>
-                    <a href="" class="u-active-custom-color-2 u-border-none u-btn u-btn-round u-button-style u-custom-color-3 u-custom-font u-custom-item u-radius-20 u-btn-8">pink</a>
+                    <a id="quiz-op-3" onclick="checkAnswer(this)" class="u-border-none u-btn u-btn-round u-button-style u-custom-color-3 u-custom-font u-custom-item u-radius-20 u-btn-7">Orange</a>
+                    <a id="quiz-op-4" onclick="checkAnswer(this)" class="u-border-none u-btn u-btn-round u-button-style u-custom-color-3 u-custom-font u-custom-item u-radius-20 u-btn-8">Pink</a>
                   </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
-        <a href="Score.html" class="round-button u-border-none u-btn u-btn-round u-button-style u-custom-font u-palette-1-dark-1 u-radius-50 u-text-active-white u-text-hover-white u-btn-9">NEXT QUESTION &gt;</a>
+        <a id="next-btn" class="round-button u-border-none u-btn u-btn-round u-button-style u-custom-font u-palette-1-dark-1 u-radius-50 u-text-active-white u-text-hover-white u-btn-9">NEXT &gt;</a>
       </div>
     </section>
      
@@ -123,3 +123,4 @@
       </div></footer>
   </body>
 </html>
+<script src="game.js"></script>

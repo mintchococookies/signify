@@ -34474,7 +34474,7 @@ a.u-link.u-text-hover-grey-90:hover {
         .u-button-style.u-custom-color-3[class*="u-border-"]
         {
             color: #ffffff !important;
-            background-color: #9693e6 !important;
+            background-color: #9693e6;
         }
 
         .u-button-style.u-custom-color-3:hover,
@@ -34489,7 +34489,7 @@ a.u-link.u-text-hover-grey-90:hover {
         li.active > .u-button-style.u-button-style.u-custom-color-3[class*="u-border-"]
         {
             color: #ffffff !important;
-            background-color: #7874df !important;
+            background-color: #7874df;
         }
 
         .u-hover-custom-color-3:hover,
