@@ -51,7 +51,7 @@
   font-size: 1.625rem;
   font-weight: 700;
   font-style: normal;
-  margin: 0 auto 0 143px;
+  margin: 0 auto 0 auto;
 }
 
 .u-section-1 .u-text-3 {
@@ -128,7 +128,7 @@
   background-image: none;
   border-style: none;
   margin: 0 0 0 auto;
-  padding: 16px 69px 18px 67px;
+  padding: 18px 69px 18px 67px;
 }
 
 .u-section-1 .u-btn-6 {
@@ -137,10 +137,9 @@
   font-family: Inter;
   font-weight: 400;
   background-image: none;
-  text-shadow: 2px 2px 0 rgba(0,0,0,0.2);
   border-style: none;
   margin: -60px auto 0 0;
-  padding: 16px 83px 18px 81px;
+  padding: 18px 69px 18px 67px;
 }
 
 .u-section-1 .u-container-layout-4 {
@@ -155,7 +154,7 @@
   background-image: none;
   border-style: none;
   margin: 0 0 0 auto;
-  padding: 16px 69px 18px 67px;
+  padding: 18px 69px 18px 67px;
 }
 
 .u-section-1 .u-btn-8 {
@@ -164,10 +163,9 @@
   font-family: Inter;
   font-weight: 400;
   background-image: none;
-  text-shadow: 2px 2px 0 rgba(0,0,0,0.2);
   border-style: none;
   margin: -60px auto 0 0;
-  padding: 16px 83px 18px 81px;
+  padding: 18px 69px 18px 67px;
 }
 
 .u-section-1 .u-btn-9 {
@@ -345,7 +343,7 @@
   .u-section-1 .u-btn-6 {
     margin-top: -228px;
     margin-left: auto;
-    padding: 17px 80px;
+    padding: 17px 64px;
   }
 
   .u-section-1 .u-container-layout-4 {
@@ -361,7 +359,7 @@
   .u-section-1 .u-btn-8 {
     margin-top: -228px;
     margin-left: auto;
-    padding: 17px 80px;
+    padding: 17px 64px;
   }
 
   .u-section-1 .u-btn-9 {
@@ -416,4 +414,17 @@
     width: 280px;
     margin-top: -185px;
   }
+}
+.disabled {
+  pointer-events: none;
+  background-color: lightgray !important;
+}
+.quiz-correct{
+  background-color: #155724 !important;
+}
+.quiz-incorrect{
+  background-color: #721c24 !important;
+}
+.hide-btn{
+  display:none;
 }
