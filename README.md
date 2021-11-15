@@ -3,7 +3,7 @@
 </p>
 <h1 align="center"> Signify MSL </h1>
 <h3 align="center"> CSC 3024 - Human Computer Interaction </h3>
-<h5 align="center"> Project - <a href="https://www.concordia.ca/">Sunway University</a> (August 2021) </h5>
+<h5 align="center"> Project - <a href="https://university.sunway.edu.my/">Sunway University</a> (August 2021) </h5>
 
 <!-- <p align="center"> 
   <img src="gif/pacman_game.gif" alt="Animated gif pacman game" height="282px" width="637">
