@@ -85,12 +85,12 @@
         </div>
         <p class="u-custom-font u-text u-text-default u-text-grey-80 u-text-2">Select a category and click on the cards to view the signs</p>
         <div class="u-tab-links-align-justify u-tabs u-tabs-1">
-          <ul class="u-spacing-30 u-tab-list u-unstyled" role="tablist">
+          <ul class="u-spacing-30 u-tab-list u-unstyled" role="tablist" id ="tabsHolder">
             <li class="u-tab-item" role="presentation">
-              <a class="active u-active-custom-color-2 u-button-style u-custom-color-3 u-custom-font u-radius-20 u-tab-link u-text-active-white u-text-black u-tab-link-2" id="link-tab-14b7" href="#tab-14b7" role="tab" aria-controls="tab-14b7" aria-selected="false">ALL</a>
+              <a class="active u-active-custom-color-2 u-button-style u-custom-color-3 u-custom-font u-radius-20 u-tab-link u-text-active-white u-text-black u-tab-link-1" id="link-tab-0da5" href="#tab-0da5" role="tab" aria-controls="tab-0da5" aria-selected="true">ALL</a>
             </li>
             <li class="u-tab-item" role="presentation">
-              <a class="u-active-custom-color-2 u-button-style u-custom-color-3 u-custom-font u-radius-20 u-tab-link u-text-active-white u-text-black u-tab-link-1" id="link-tab-0da5" href="#tab-0da5" role="tab" aria-controls="tab-0da5" aria-selected="true">ANIMALS</a>
+              <a class="u-active-custom-color-2 u-button-style u-custom-color-3 u-custom-font u-radius-20 u-tab-link u-text-active-white u-text-black u-tab-link-2" id="link-tab-0e15" href="#tab-0e15" role="tab" aria-controls="tab-0e15" aria-selected="false">ANIMALS</a>
             </li>
             <li class="u-tab-item" role="presentation">
               <a class="u-active-custom-color-2 u-button-style u-custom-color-3 u-custom-font u-radius-20 u-tab-link u-text-active-white u-text-black u-tab-link-2" id="link-tab-14b7" href="#tab-14b7" role="tab" aria-controls="tab-14b7" aria-selected="false">FOOD</a>
@@ -112,7 +112,7 @@
             <div class="u-container-style u-custom-color-5 u-tab-active u-tab-pane u-tab-pane-1" id="tab-0da5" role="tabpanel" aria-labelledby="link-tab-0da5">
               <div class="u-container-layout u-container-layout-1">
                 <div class="u-expanded-width u-list u-list-1">
-                  <div class="u-repeater u-repeater-1 allHolder" >
+                  <div class="u-repeater u-repeater-1 allHolder" id = "allHolder">
           
     <!--CATEGORY 1, WORD 1-->
                     <div class="u-container-style u-custom-item u-list-item u-repeater-item u-shape-rectangle wordCards">
@@ -140,7 +140,7 @@
                             </div>
                           </label>
                         </div>
-                        <p class="u-custom-font u-custom-item u-text u-text-default u-text-grey-80 u-text-3 signWord">ELEPHANT</p>
+                        <p class="u-custom-font u-custom-item u-text u-text-default u-text-grey-80 u-text-3 signWordAll">ELEPHANT</p>
                       </div>
                     </div>
           
@@ -170,7 +170,7 @@
                             </div>
                           </label>
                         </div>
-                        <p class="u-custom-font u-custom-item u-text u-text-default u-text-grey-80 u-text-4 signWord">TIGER</p>
+                        <p class="u-custom-font u-custom-item u-text u-text-default u-text-grey-80 u-text-4 signWordAll">TIGER</p>
                       </div>
                     </div>
       
@@ -199,7 +199,7 @@
                             </div>
                           </label>
                         </div>
-                        <p class="u-custom-font u-custom-item u-text u-text-default u-text-grey-80 u-text-5 signWord">WOLF</p>
+                        <p class="u-custom-font u-custom-item u-text u-text-default u-text-grey-80 u-text-5 signWordAll">WOLF</p>
                       </div>
                     </div>
 
@@ -228,7 +228,7 @@
                             </div>
                           </label>
                         </div>
-                        <p class="u-custom-font u-custom-item u-text u-text-default u-text-grey-80 u-text-6 signWord">BEAR</p>
+                        <p class="u-custom-font u-custom-item u-text u-text-default u-text-grey-80 u-text-6 signWordAll">BEAR</p>
                       </div>
                     </div>
 
@@ -257,11 +257,197 @@
                             </div>
                           </label>
                         </div>
-                        <p class="u-custom-font u-custom-item u-text u-text-default u-text-grey-80 u-text-7 signWord">DEER</p>
+                        <p class="u-custom-font u-custom-item u-text u-text-default u-text-grey-80 u-text-7 signWordAll">DEER</p>
                       </div>
                     </div>
 
     <!--CATEGORY 1, WORD 6-->
+                    <div class="u-container-style u-custom-item u-list-item u-repeater-item u-shape-rectangle">
+                      <div class="u-container-layout u-similar-container u-container-layout-12">
+                        <div class="u-clearfix u-custom-html u-custom-html-7">
+                          <label>
+                            <input type="checkbox" class="flashcard-input">
+                            <div class="card">
+                              <!--FRONT OF THE CARD-->
+                              <div class="front"><img src="images/cdcee78a-8668-4343-8c0f-1cb098796928.jpg" alt="Giraffe" style="width:290px;height:290px;"></div>
+
+                              <!--BACK OF THE CARD-->
+                              <div class="back">
+                                <video id="video16" width="340" height="240" autoplay loop muted>
+                                  <source src="images/banana.mp4" type="video/mp4">
+                                  Your browser does not support the video tag.
+                                </video>
+                                <section class="speed-adjust-btn">
+                                  <button onclick="normal16()" class="u-border-2 u-border-white u-btn u-btn-round u-button-style u-custom-font u-hover-custom-color-2 u-none u-radius-50 u-btn-5"> &nbsp;NORMAL</button>
+                                  <button onclick="faster16()" class="u-border-2 u-border-white u-btn u-btn-round u-button-style u-custom-font u-hover-custom-color-2 u-none u-radius-50 u-btn-6">FASTER</button>
+                                  <button onclick="slower16()" class="u-border-2 u-border-white u-btn u-btn-round u-button-style u-custom-font u-hover-custom-color-2 u-none u-radius-50 u-btn-7">SLOWER</button>
+                                </section>
+                              </div>
+                            </div>
+                          </label>
+                        </div>
+                        <p class="u-custom-font u-custom-item u-text u-text-default u-text-grey-80 u-text-8 signWordAll">GIRAFFE</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+<!--FIRST-POINT-FIVE CATEGORY-->
+            <div class="u-container-style u-custom-color-5 u-tab-pane u-tab-pane-1.5" id="tab-0e15" role="tabpanel" aria-labelledby="link-tab-0e15">
+              <div class="u-container-layout u-container-layout-1">
+                <div class="u-expanded-width u-list u-list-1">
+                  <div class="u-repeater u-repeater-1" >
+
+            <!--CATEGORY 1.5, WORD 1-->
+                    <div class="u-container-style u-custom-item u-list-item u-repeater-item u-shape-rectangle wordCards">
+                      <div class="u-container-layout u-similar-container u-container-layout-2">
+                        <div class="u-clearfix u-custom-html u-custom-html-2">
+                          <label>
+                            <input type="checkbox" class="flashcard-input">
+                            <div class="card">
+
+                              <!--FRONT OF THE CARD-->
+                              <div class="front"><img src="images/cdcee78a-8668-4343-8c0f-1cb098796928.jpg" alt="Giraffe" style="width:290px;height:290px;"></div>
+
+                              <!--BACK OF THE CARD-->
+                              <div class="back">
+                                <video id="video11" width="340" height="240" autoplay loop muted>
+                                  <source src="images/banana.mp4" type="video/mp4">
+                                  Your browser does not support the video tag.
+                                </video>
+                                <section class="speed-adjust-btn">
+                                  <button onclick="normal11()" class="u-border-2 u-border-white u-btn u-btn-round u-button-style u-custom-font u-hover-custom-color-2 u-none u-radius-50 u-btn-5"> &nbsp;NORMAL</button>
+                                  <button onclick="faster11()" class="u-border-2 u-border-white u-btn u-btn-round u-button-style u-custom-font u-hover-custom-color-2 u-none u-radius-50 u-btn-6">FASTER</button>
+                                  <button onclick="slower11()" class="u-border-2 u-border-white u-btn u-btn-round u-button-style u-custom-font u-hover-custom-color-2 u-none u-radius-50 u-btn-7">SLOWER</button>
+                                </section>
+                              </div>
+                            </div>
+                          </label>
+                        </div>
+                        <p class="u-custom-font u-custom-item u-text u-text-default u-text-grey-80 u-text-3 signWord">ELEPHANT</p>
+                      </div>
+                    </div>
+
+            <!--CATEGORY 1.5, WORD 2-->
+                    <div class="u-container-style u-custom-item u-list-item u-repeater-item u-shape-rectangle">
+                      <div class="u-container-layout u-similar-container u-container-layout-2">
+                        <div class="u-clearfix u-custom-html u-custom-html-3">
+                          <label>
+                            <input type="checkbox" class="flashcard-input">
+                            <div class="card">
+
+                              <!--FRONT OF THE CARD-->
+                              <div class="front"><img src="images/cdcee78a-8668-4343-8c0f-1cb098796928.jpg" alt="Giraffe" style="width:290px;height:290px;"></div>
+
+                              <!--BACK OF THE CARD-->
+                              <div class="back">
+                                <video id="video12" width="340" height="240" autoplay loop muted>
+                                  <source src="images/banana.mp4" type="video/mp4">
+                                  Your browser does not support the video tag.
+                                </video>
+                                <section class="speed-adjust-btn">
+                                  <button onclick="normal12()" class="u-border-2 u-border-white u-btn u-btn-round u-button-style u-custom-font u-hover-custom-color-2 u-none u-radius-50 u-btn-5"> &nbsp;NORMAL</button>
+                                  <button onclick="faster12()" class="u-border-2 u-border-white u-btn u-btn-round u-button-style u-custom-font u-hover-custom-color-2 u-none u-radius-50 u-btn-6">FASTER</button>
+                                  <button onclick="slower12()" class="u-border-2 u-border-white u-btn u-btn-round u-button-style u-custom-font u-hover-custom-color-2 u-none u-radius-50 u-btn-7">SLOWER</button>
+                                </section>
+                              </div>
+                            </div>
+                          </label>
+                        </div>
+                        <p class="u-custom-font u-custom-item u-text u-text-default u-text-grey-80 u-text-4 signWord">TIGER</p>
+                      </div>
+                    </div>
+
+            <!--CATEGORY 1.5, WORD 3-->
+                    <div class="u-container-style u-custom-item u-list-item u-repeater-item u-shape-rectangle">
+                      <div class="u-container-layout u-similar-container u-container-layout-6">
+                        <div class="u-clearfix u-custom-html u-custom-html-4">
+                          <label>
+                            <input type="checkbox" class="flashcard-input">
+                            <div class="card">
+                              <!--FRONT OF THE CARD-->
+                              <div class="front"><img src="images/cdcee78a-8668-4343-8c0f-1cb098796928.jpg" alt="Giraffe" style="width:290px;height:290px;"></div>
+
+                              <!--BACK OF THE CARD-->
+                              <div class="back">
+                                <video id="video13" width="340" height="240" autoplay loop muted>
+                                  <source src="images/banana.mp4" type="video/mp4">
+                                  Your browser does not support the video tag.
+                                </video>
+                                <section class="speed-adjust-btn">
+                                  <button onclick="normal13()" class="u-border-2 u-border-white u-btn u-btn-round u-button-style u-custom-font u-hover-custom-color-2 u-none u-radius-50 u-btn-5"> &nbsp;NORMAL</button>
+                                  <button onclick="faster13()" class="u-border-2 u-border-white u-btn u-btn-round u-button-style u-custom-font u-hover-custom-color-2 u-none u-radius-50 u-btn-6">FASTER</button>
+                                  <button onclick="slower13()" class="u-border-2 u-border-white u-btn u-btn-round u-button-style u-custom-font u-hover-custom-color-2 u-none u-radius-50 u-btn-7">SLOWER</button>
+                                </section>
+                              </div>
+                            </div>
+                          </label>
+                        </div>
+                        <p class="u-custom-font u-custom-item u-text u-text-default u-text-grey-80 u-text-5 signWord">WOLF</p>
+                      </div>
+                    </div>
+
+            <!--CATEGORY 1.5, WORD 4-->
+                    <div class="u-container-style u-custom-item u-list-item u-repeater-item u-shape-rectangle">
+                      <div class="u-container-layout u-similar-container u-container-layout-8">
+                        <div class="u-clearfix u-custom-html u-custom-html-5">
+                          <label>
+                            <input type="checkbox" class="flashcard-input">
+                            <div class="card">
+                              <!--FRONT OF THE CARD-->
+                              <div class="front"><img src="images/cdcee78a-8668-4343-8c0f-1cb098796928.jpg" alt="Giraffe" style="width:290px;height:290px;"></div>
+
+                              <!--BACK OF THE CARD-->
+                              <div class="back">
+                                <video id="video14" width="340" height="240" autoplay loop muted>
+                                  <source src="images/banana.mp4" type="video/mp4">
+                                  Your browser does not support the video tag.
+                                </video>
+                                <section class="speed-adjust-btn">
+                                  <button onclick="normal14()" class="u-border-2 u-border-white u-btn u-btn-round u-button-style u-custom-font u-hover-custom-color-2 u-none u-radius-50 u-btn-5"> &nbsp;NORMAL</button>
+                                  <button onclick="faster14()" class="u-border-2 u-border-white u-btn u-btn-round u-button-style u-custom-font u-hover-custom-color-2 u-none u-radius-50 u-btn-6">FASTER</button>
+                                  <button onclick="slower14()" class="u-border-2 u-border-white u-btn u-btn-round u-button-style u-custom-font u-hover-custom-color-2 u-none u-radius-50 u-btn-7">SLOWER</button>
+                                </section>
+                              </div>
+                            </div>
+                          </label>
+                        </div>
+                        <p class="u-custom-font u-custom-item u-text u-text-default u-text-grey-80 u-text-6 signWord">BEAR</p>
+                      </div>
+                    </div>
+
+            <!--CATEGORY 1.5, WORD 5-->
+                    <div class="u-container-style u-custom-item u-list-item u-repeater-item u-shape-rectangle">
+                      <div class="u-container-layout u-similar-container u-container-layout-10">
+                        <div class="u-clearfix u-custom-html u-custom-html-6">
+                          <label>
+                            <input type="checkbox" class="flashcard-input">
+                            <div class="card">
+                              <!--FRONT OF THE CARD-->
+                              <div class="front"><img src="images/cdcee78a-8668-4343-8c0f-1cb098796928.jpg" alt="Giraffe" style="width:290px;height:290px;"></div>
+
+                              <!--BACK OF THE CARD-->
+                              <div class="back">
+                                <video id="video15" width="340" height="240" autoplay loop muted>
+                                  <source src="images/banana.mp4" type="video/mp4">
+                                  Your browser does not support the video tag.
+                                </video>
+                                <section class="speed-adjust-btn">
+                                  <button onclick="normal15()" class="u-border-2 u-border-white u-btn u-btn-round u-button-style u-custom-font u-hover-custom-color-2 u-none u-radius-50 u-btn-5"> &nbsp;NORMAL</button>
+                                  <button onclick="faster15()" class="u-border-2 u-border-white u-btn u-btn-round u-button-style u-custom-font u-hover-custom-color-2 u-none u-radius-50 u-btn-6">FASTER</button>
+                                  <button onclick="slower15()" class="u-border-2 u-border-white u-btn u-btn-round u-button-style u-custom-font u-hover-custom-color-2 u-none u-radius-50 u-btn-7">SLOWER</button>
+                                </section>
+                              </div>
+                            </div>
+                          </label>
+                        </div>
+                        <p class="u-custom-font u-custom-item u-text u-text-default u-text-grey-80 u-text-7 signWord">DEER</p>
+                      </div>
+                    </div>
+
+            <!--CATEGORY 1.5, WORD 6-->
                     <div class="u-container-style u-custom-item u-list-item u-repeater-item u-shape-rectangle">
                       <div class="u-container-layout u-similar-container u-container-layout-12">
                         <div class="u-clearfix u-custom-html u-custom-html-7">
@@ -292,7 +478,7 @@
                   </div>
                 </div>
               </div>
-            </div>
+            </div>            
 
 <!--SECOND CATEGORY-->
             <div class="u-align-left u-container-style u-custom-color-5 u-tab-pane u-tab-pane-2" id="tab-14b7" role="tabpanel" aria-labelledby="link-tab-14b7">
