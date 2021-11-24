@@ -118,7 +118,7 @@
 }
 
 .u-section-1 .u-repeater-1 {
-  grid-template-columns: repeat(3, 33.3333%);
+  grid-template-columns: repeat(3, 1fr);
   min-height: 836px;
   grid-gap: 0px;
 }
@@ -2606,14 +2606,16 @@ html {
   height: 0 !important;
 }
 
-/* .nextLine{
-  display: flex;
-  flex-direction: column;
-} */ 
+.nextLine{
+  margin-bottom: 2.5em;
+} 
 /* NOT SURE IF NEEDED BUT MESSES UP WHEN THERE'S ONLY 1 CARD */
 
 .front{
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.topPadding{
+  padding-top: 25px;
 }
