@@ -17208,6 +17208,7 @@ p {
 .u-repeater-item:not([class*="u-align-"]),
 .u-container-style:not([class*="u-align-"]) {
   text-align: left;
+  margin: 0 auto;
 }
 .u-nav:not([class*="u-align-"]) .u-nav {
   text-align: left;
@@ -35601,7 +35602,7 @@ a.u-link.u-text-hover-grey-90:hover {
 
 .u-tabs.u-tab-links-align-justify .u-tab-list > *{
   width: 100%;
-  max-width: 150px;
+  max-width: 175px;
   margin: auto;
   margin-bottom: 1em;
 }
