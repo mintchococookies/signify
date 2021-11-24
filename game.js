@@ -1,55 +1,46 @@
 var ques_amt = 5; //the number of questions
-var category_list = ["All", "Food", "Time", "People", "Colors", "Animals"]; //the names of categories
+var category_list = ["All", "Animals", "Feelings", "Occupations", "Questions"]; //the names of categories
 
 //insert all the data here (or move this to a seperate js file)
+
+//ANIMALS
 var category1 = [
-    { video: "images/banana.mp4", answer: "word1" },
-    { video: "images/banana.mp4", answer: "word2" },
-    { video: "images/banana.mp4", answer: "word3" },
-    { video: "images/banana.mp4", answer: "word4" },
-    { video: "images/banana.mp4", answer: "word5" },
-    { video: "images/banana.mp4", answer: "word6" }
+    { video: "sign language videos/animals/chicken.mp4", answer: "CHICKEN<br><i>AYAM</i>" },
+    { video: "sign language videos/animals/cat.mp4", answer: "CAT<br><i>KUCING</i>" },
+    { video: "sign language videos/animals/cow.mp4", answer: "COW<br><i>LEMBU</i>" },
+    { video: "sign language videos/animals/goat.mp4", answer: "GOAT<br><i>KAMBING</i>" },
+    { video: "sign language videos/animals/mouse.mp4", answer: "MOUSE<br><i>TIKUS</i>" },
+    { video: "sign language videos/animals/rabbit.mp4", answer: "RABBIT<br><i>ARNAB</i>" }
 ];
+//FEELINGS
 var category2 = [
-    { video: "images/banana.mp4", answer: "word1" },
-    { video: "images/banana.mp4", answer: "word2" },
-    { video: "images/banana.mp4", answer: "word3" },
-    { video: "images/banana.mp4", answer: "word4" },
-    { video: "images/banana.mp4", answer: "word5" },
-    { video: "images/banana.mp4", answer: "word6" }
+    { video: "sign language videos/feelings/love.mp4", answer: "LOVE<br><i>SAYANG</i>" },
+    { video: "sign language videos/feelings/like.mp4", answer: "LIKE<br><i>SUKA</i>" },
+    { video: "sign language videos/feelings/angry.mp4", answer: "ANGRY<br><i>MARAH</i>" },
+    { video: "sign language videos/feelings/miss.mp4", answer: "MISS<br><i>RINDU</i>" },
+    { video: "sign language videos/feelings/worry.mp4", answer: "WORRY<br><i>RISAU</i>" },
+    { video: "sign language videos/feelings/hate.mp4", answer: "HATE<br><i>BENCI</i>" }
 ];
+//OCCUPATIONS
 var category3 = [
-    { video: "images/banana.mp4", answer: "word1" },
-    { video: "images/banana.mp4", answer: "word2" },
-    { video: "images/banana.mp4", answer: "word3" },
-    { video: "images/banana.mp4", answer: "word4" },
-    { video: "images/banana.mp4", answer: "word5" },
-    { video: "images/banana.mp4", answer: "word6" }
+    { video: "sign language videos/occupations/police.mp4", answer: "POLICE<br><i>POLIS</i>" },
+    { video: "sign language videos/occupations/teacher.mp4", answer: "TEACHER<br><i>CIKGU</i>" },
+    { video: "sign language videos/occupations/firefighter.mp4", answer: "FIREFIGHTER<br><i>BOMBA</i>" },
+    { video: "sign language videos/occupations/chef.mp4", answer: "CHEF<br><i>TUKANG MASAK</i>" },
+    { video: "sign language videos/occupations/doctor.mp4", answer: "DOCTOR<br><i>DOKTOR</i>" },
+    { video: "sign language videos/occupations/clerk.mp4", answer: "CLERK<br><i>KERANI</i>" }
 ];
+//QUESTIONS
 var category4 = [
-    { video: "images/banana.mp4", answer: "word1" },
-    { video: "images/banana.mp4", answer: "word2" },
-    { video: "images/banana.mp4", answer: "word3" },
-    { video: "images/banana.mp4", answer: "word4" },
-    { video: "images/banana.mp4", answer: "word5" },
-    { video: "images/banana.mp4", answer: "word6" }
+    { video: "sign language videos/questions/who.mp4", answer: "WHO<br><i>SIAPA</i>" },
+    { video: "sign language videos/questions/howmuch.mp4", answer: "HOW MUCH<br><i>BERAPA</i>" },
+    { video: "sign language videos/questions/what.mp4", answer: "WHAT<br><i>APA</i>" },
+    { video: "sign language videos/questions/where.mp4", answer: "WHERE<br><i>MANA</i>" },
+    { video: "sign language videos/questions/when.mp4", answer: "WHEN<br><i>BILA</i>" },
+    { video: "sign language videos/questions/how.mp4", answer: "HOW<br><i>BAGAIMANA</i>" }
 ];
-var category5 = [
-    { video: "images/banana.mp4", answer: "word1" },
-    { video: "images/banana.mp4", answer: "word2" },
-    { video: "images/banana.mp4", answer: "word3" },
-    { video: "images/banana.mp4", answer: "word4" },
-    { video: "images/banana.mp4", answer: "word5" },
-    { video: "images/banana.mp4", answer: "word6" }
-];
-var category6 = [
-    { video: "images/banana.mp4", answer: "word1" },
-    { video: "images/banana.mp4", answer: "word2" },
-    { video: "images/banana.mp4", answer: "word3" },
-    { video: "images/banana.mp4", answer: "word4" },
-    { video: "images/banana.mp4", answer: "word5" },
-    { video: "images/banana.mp4", answer: "word6" }
-];
+var category_all = [];
+category_all.push(...category1, ...category2, ...category3, ...category4);
 
 var category;
 var word_list;
@@ -73,37 +64,30 @@ function selectCategory(elem) {
     if (elem.id == "category-5") {
         cat_key = 5;
     }
-    if (elem.id == "category-6") {
-        cat_key = 6;
-    }
     sessionStorage.setItem("catkey", cat_key);
     window.location.href = "Game.html";
 }
 
 function setCategory() {
     if (sessionStorage.getItem("catkey") == 1) {
-        word_list = category1;
+        word_list = category_all;
         category = "Category: " + category_list[0];
     }
     if (sessionStorage.getItem("catkey") == 2) {
-        word_list = category2;
+        word_list = category1;
         category = "Category: " + category_list[1];
     }
     if (sessionStorage.getItem("catkey") == 3) {
-        word_list = category3;
+        word_list = category2;
         category = "Category: " + category_list[2];
     }
     if (sessionStorage.getItem("catkey") == 4) {
-        word_list = category4;
+        word_list = category3;
         category = "Category: " + category_list[3];
     }
     if (sessionStorage.getItem("catkey") == 5) {
-        word_list = category5;
+        word_list = category4;
         category = "Category: " + category_list[4];
-    }
-    if (sessionStorage.getItem("catkey") == 6) {
-        word_list = category6;
-        category = "Category: " + category_list[5];
     }
     document.getElementById("quiz-category").innerHTML = category;
 }
