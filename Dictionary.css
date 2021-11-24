@@ -1,19 +1,3 @@
-/* EXAMPLE SENTENCE AND WORD IN DICTIONARY */
-.switchVideoType {
-  margin-top: 40px;
-}
-
-.switchVideoType label span{
-  width: 100%;
-  max-width: 200px;
-  display: inline-block;
-}
-
-.switchVideoType label {
-  height: 0 !important;
-}
-/* EXAMPLE SENTENCE AND WORD IN DICTIONARY */
-
 .u-section-1 {
   background-image: none;
 }
@@ -35,8 +19,8 @@
   letter-spacing: 2px;
   border-style: none;
   font-family: Inter;
-  box-shadow: 2px 2px 20px 0 rgba(51,51,51,0.2);
-  text-shadow: 2px 2px 20px rgba(0,0,0,0.2);
+  box-shadow: 2px 2px 20px 0 rgba(51, 51, 51, 0.2);
+  text-shadow: 2px 2px 20px rgba(0, 0, 0, 0.2);
   margin: -39px auto 0 20px;
   padding: 6px 46px 7px 45px;
 }
@@ -2330,39 +2314,39 @@
 }
 
 /**SEARCH BAR**/
-.search-container > form{
+.search-container > form {
   display: flex;
   justify-content: center;
   align-items: center;
 }
-form > *{
+form > * {
   padding: 0.5em 1em;
   min-height: 5vmin;
 }
-.search-container input[type="text"]{
+.search-container input[type="text"] {
   border: none;
-border-radius: 1.5vmin 0px 0px 1.5vmin;
+  border-radius: 1.5vmin 0px 0px 1.5vmin;
 }
-.search-container button{
+.search-container button {
   border: none;
   background: #eee;
-border-radius: 0px 1.5vmin 1.5vmin 0px;
+  border-radius: 0px 1.5vmin 1.5vmin 0px;
 }
 .search-container button:hover,
-.search-container button:focus{
+.search-container button:focus {
   cursor: pointer;
   background-color: #ddd;
 }
-.search-container button:active{
+.search-container button:active {
   border: 1px solid #333333;
 }
-
 
 /**FLASHCARDS**/
 .speed-adjust-btn {
   margin-left: 15px;
   margin-right: 15px;
-}  
+  margin-bottom: 40px;
+}
 
 label {
   -webkit-perspective: 1000px;
@@ -2398,7 +2382,7 @@ label {
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
   border-radius: 1.8vmin;
-  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
 .card .back {
   background: #333;
@@ -2414,11 +2398,11 @@ label {
   -webkit-transform: rotateY(180deg);
 }
 
-html{
+html {
   scroll-behavior: smooth;
 }
 
-#backToTopContainer{
+#backToTopContainer {
   cursor: pointer;
   position: fixed;
   bottom: 5vmin;
@@ -2427,22 +2411,22 @@ html{
   display: none;
 }
 
-#backToTopButton{
+#backToTopButton {
   cursor: pointer;
   border: none;
   background: transparent;
 }
 
-#backToTopButtonIcon{
- font-size: 2.5rem;
- color: #676597;
+#backToTopButtonIcon {
+  font-size: 2.5rem;
+  color: #676597;
 }
 
-#backToTopText{
-color: #d5d4f5;
+#backToTopText {
+  color: #d5d4f5;
 }
 
-.backToTopContainer:hover{
+.backToTopContainer:hover {
   opacity: 0.8;
 }
 
@@ -2610,4 +2594,26 @@ color: #d5d4f5;
   .u-section-1 .u-custom-html-31 {
     width: 260px;
   }
+}
+
+.switchVideoType label span{
+  width: 100%;
+  max-width: 200px;
+  display: inline-block;
+}
+
+.switchVideoType label {
+  height: 0 !important;
+}
+
+/* .nextLine{
+  display: flex;
+  flex-direction: column;
+} */ 
+/* NOT SURE IF NEEDED BUT MESSES UP WHEN THERE'S ONLY 1 CARD */
+
+.front{
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
