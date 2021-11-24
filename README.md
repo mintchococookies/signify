@@ -32,7 +32,7 @@
   A website to help people learn the Malaysian Sign Language
 </p>
 <p align = "justify">
-  Website Link 
+  https://signifymsl.github.io/signify/
 </p>
 
 ![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png)
