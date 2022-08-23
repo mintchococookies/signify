@@ -64,7 +64,7 @@ $ git push</code></pre>
 <h2 id="features"> :cloud: Features</h2>
 
 <p align="justify"> 
-  In this project, ...
+  The features of this project include:
 </p>
 
 <ul>
