@@ -80,16 +80,3 @@ $ git push</code></pre>
 <p>You are able to open the website using this link: https://signifymsl.github.io/signify/
 
 </p>
-
-
-
-![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png)
-
-
-
-![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png)
-
-<!-- CREDITS -->
-<h2 id="credits"> :scroll: Credits</h2>
-<!-- Can put insta links here -->
-
